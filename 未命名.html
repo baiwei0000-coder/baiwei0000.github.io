@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>垃圾分类科普网 - 首页</title>
+    <style>
+        * {margin:0;padding:0;box-sizing:border-box;font-family:"Microsoft YaHei", sans-serif;}
+        body {background:#f5f7fa;color:#333;line-height:1.6;}
+        header {background:#2ecc71;padding:20px;text-align:center;color:white;font-size:24px;font-weight:bold;}
+        nav {background:#27ae60;padding:12px 0;text-align:center;}
+        nav a {color:white;text-decoration:none;margin:0 15px;font-size:16px;padding:8px 12px;border-radius:4px;}
+        nav a:hover {background:#2ecc71;}
+        .container {max-width:1200px;margin:30px auto;padding:0 20px;}
+        .banner {background:url(https://picsum.photos/1200/300?random=1) no-repeat center/cover;height:300px;border-radius:8px;margin-bottom:30px;display:flex;align-items:center;justify-content:center;color:white;text-shadow:0 0 10px #000;font-size:36px;font-weight:bold;}
+        .card-box {display:flex;flex-wrap:wrap;justify-content:space-between;gap:20px;}
+        .card {width:23%;background:white;border-radius:8px;padding:25px;box-shadow:0 2px 10px rgba(0,0,0,0.1);text-align:center;cursor:pointer;transition:transform 0.3s;}
+        .card:hover {transform:translateY(-8px);}
+        .card h3 {color:#27ae60;margin:15px 0;font-size:20px;}
+        .card p {color:#666;font-size:14px;}
+        .content {margin:40px 0;text-align:center;font-size:18px;line-height:2;}
+        footer {background:#333;color:white;text-align:center;padding:20px;margin-top:50px;}
+        @media (max-width:768px) {.card {width:48%;}.banner {font-size:24px;height:200px;}}
+        @media (max-width:480px) {.card {width:100%;}nav a {display:block;margin:8px 0;}}
+    </style>
+</head>
+<body>
+    <header>垃圾分类，绿色生活</header>
+    <nav>
+        <a href="index.html">首页</a>
+        <a href="category.html">分类标准</a>
+        <a href="mistakes.html">常见误区</a>
+        <a href="qa.html">知识问答</a>
+    </nav>
+    <div class="container">
+        <div class="banner">全民参与垃圾分类 · 共建美好生态家园</div>
+        <div class="card-box">
+            <div class="card" onclick="location.href='category.html'">
+                <h3>分类标准</h3>
+                <p>掌握可回收、厨余、有害、其他垃圾4大类核心定义，精准投放</p>
+            </div>
+            <div class="card" onclick="location.href='mistakes.html'">
+                <h3>常见误区</h3>
+                <p>避开90%的人都会犯的垃圾分类错误，告别投放困惑</p>
+            </div>
+            <div class="card" onclick="location.href='qa.html'">
+                <h3>知识问答</h3>
+                <p>解答生活中各类垃圾分类疑难问题，快速答疑解惑</p>
+            </div>
+            <div class="card">
+                <h3>行动倡议</h3>
+                <p>从我做起，从小事做起，践行绿色低碳的生活方式</p>
+            </div>
+        </div>
+        <div class="content">
+            <p>♻️ 垃圾分类是对垃圾收集处置传统方式的改革，是对垃圾进行有效处置的一种科学管理方法。</p>
+            <p>✅ 通过分类投放、分类收集，把有用物资从垃圾中分离出来重新回收、利用，变废为宝。</p>
+            <p>🌍 既提高垃圾资源利用水平，又减少垃圾处置量，是实现垃圾减量化、资源化、无害化的必由之路。</p>
+        </div>
+    </div>
+    <footer>© 2026 垃圾分类科普网 | 本网站基于 GitHub Pages 搭建</footer>
+</body>
+</html>
